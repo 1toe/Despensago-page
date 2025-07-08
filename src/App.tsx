@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { 
-  ShoppingCart, 
-  Clock, 
-  ChefHat, 
-  Users, 
-  CheckCircle, 
+import {
+  ShoppingCart,
+  Clock,
+  ChefHat,
+  Users,
+  CheckCircle,
   ArrowRight,
   Star,
   Bell,
@@ -25,7 +25,7 @@ function App() {
 
   useEffect(() => {
     setIsLoaded(true);
-    
+
     // Mouse tracking for parallax effects
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({
@@ -473,12 +473,12 @@ function App() {
               <span className="text-2xl font-bold text-shimmer">DespensaGO</span>
             </div>
             <nav className={`hidden md:flex space-x-8 ${isLoaded ? 'slide-up-stagger' : ''}`}>
-              <a href="#features" className="text-[#3E4C59] hover:text-[#7CA98D] transition-all hover:scale-110 magnetic-hover" style={{'--stagger': 0} as React.CSSProperties}>Características</a>
-              <a href="#how-it-works" className="text-[#3E4C59] hover:text-[#7CA98D] transition-all hover:scale-110 magnetic-hover" style={{'--stagger': 1} as React.CSSProperties}>Cómo funciona</a>
-              <a href="#community" className="text-[#3E4C59] hover:text-[#7CA98D] transition-all hover:scale-110 magnetic-hover" style={{'--stagger': 2} as React.CSSProperties}>Comunidad</a>
+              <a href="#features" className="text-[#3E4C59] hover:text-[#7CA98D] transition-all hover:scale-110 magnetic-hover" style={{ '--stagger': 0 } as React.CSSProperties}>Características</a>
+              <a href="#how-it-works" className="text-[#3E4C59] hover:text-[#7CA98D] transition-all hover:scale-110 magnetic-hover" style={{ '--stagger': 1 } as React.CSSProperties}>Cómo funciona</a>
+              <a href="#community" className="text-[#3E4C59] hover:text-[#7CA98D] transition-all hover:scale-110 magnetic-hover" style={{ '--stagger': 2 } as React.CSSProperties}>Comunidad</a>
             </nav>
             <div className={`flex items-center ${isLoaded ? 'bounce-in' : ''}`}>
-              <button 
+              <button
                 onClick={handleDownload}
                 className="bg-gradient-to-r from-[#7CA98D] to-[#6a9179] text-white px-6 py-2 rounded-full hover:from-[#6a9179] hover:to-[#5a7f69] transition-all hover:scale-110 ripple-effect glow-effect shadow-lg"
               >
@@ -500,15 +500,15 @@ function App() {
                 Gestión inteligente de despensa
               </div>
               <h1 className="text-4xl md:text-6xl font-bold text-[#3E4C59] mb-6 leading-tight">
-                Tu despensa nunca fue tan 
+                Tu despensa nunca fue tan
                 <span className="text-shimmer block typewriter"> inteligente</span>
               </h1>
               <p className="text-xl text-[#3E4C59]/70 mb-8 leading-relaxed loading-entrance">
-                Controla vencimientos, genera recetas personalizadas y comparte con tu familia. 
+                Controla vencimientos, genera recetas personalizadas y comparte con tu familia.
                 DespensaGO transforma la gestión de tu hogar.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button 
+                <button
                   onClick={handleDownload}
                   className="bg-gradient-to-r from-[#7CA98D] to-[#6a9179] text-white px-8 py-4 rounded-full font-semibold hover:from-[#6a9179] hover:to-[#5a7f69] transition-all transform hover:scale-110 flex items-center justify-center ripple-effect glow-effect shadow-xl"
                 >
@@ -528,7 +528,7 @@ function App() {
                     </div>
                   </div>
                   <div className="space-y-3 slide-up-stagger">
-                    <div className="flex items-center justify-between p-3 bg-gradient-to-r from-red-50 to-red-100 rounded-lg border-l-4 border-red-400 hover-lift card-tilt" style={{'--stagger': 0} as React.CSSProperties}>
+                    <div className="flex items-center justify-between p-3 bg-gradient-to-r from-red-50 to-red-100 rounded-lg border-l-4 border-red-400 hover-lift card-tilt" style={{ '--stagger': 0 } as React.CSSProperties}>
                       <div className="flex items-center space-x-3">
                         <div className="w-10 h-10 bg-gradient-to-br from-red-100 to-red-200 rounded-lg flex items-center justify-center scale-pulse">
                           🥛
@@ -540,7 +540,7 @@ function App() {
                       </div>
                       <Clock className="w-5 h-5 text-red-500 rotate-on-hover" />
                     </div>
-                    <div className="flex items-center justify-between p-3 bg-gradient-to-r from-yellow-50 to-yellow-100 rounded-lg border-l-4 border-yellow-400 hover-lift card-tilt" style={{'--stagger': 1} as React.CSSProperties}>
+                    <div className="flex items-center justify-between p-3 bg-gradient-to-r from-yellow-50 to-yellow-100 rounded-lg border-l-4 border-yellow-400 hover-lift card-tilt" style={{ '--stagger': 1 } as React.CSSProperties}>
                       <div className="flex items-center space-x-3">
                         <div className="w-10 h-10 bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg flex items-center justify-center scale-pulse">
                           🍞
@@ -552,7 +552,7 @@ function App() {
                       </div>
                       <Clock className="w-5 h-5 text-yellow-500 rotate-on-hover" />
                     </div>
-                    <div className="flex items-center justify-between p-3 bg-gradient-to-r from-[#7CA98D]/10 to-[#7CA98D]/20 rounded-lg border-l-4 border-[#7CA98D] hover-lift card-tilt" style={{'--stagger': 2} as React.CSSProperties}>
+                    <div className="flex items-center justify-between p-3 bg-gradient-to-r from-[#7CA98D]/10 to-[#7CA98D]/20 rounded-lg border-l-4 border-[#7CA98D] hover-lift card-tilt" style={{ '--stagger': 2 } as React.CSSProperties}>
                       <div className="flex items-center space-x-3">
                         <div className="w-10 h-10 bg-gradient-to-br from-[#7CA98D]/20 to-[#7CA98D]/30 rounded-lg flex items-center justify-center scale-pulse">
                           🥕
@@ -577,7 +577,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 slide-up-stagger">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center animate-on-scroll card-tilt hover-lift" style={{'--stagger': index} as React.CSSProperties}>
+              <div key={index} className="text-center animate-on-scroll card-tilt hover-lift" style={{ '--stagger': index } as React.CSSProperties}>
                 <div className="w-16 h-16 bg-gradient-to-br from-[#7CA98D] to-[#6a9179] rounded-2xl flex items-center justify-center mx-auto mb-4 glow-effect">
                   <stat.icon className="w-8 h-8 text-white rotate-on-hover" />
                 </div>
@@ -607,10 +607,10 @@ function App() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 slide-up-stagger">
             {features.map((feature, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 border border-[#7CA98D]/10 animate-on-scroll hover-lift card-tilt gradient-border ripple-effect"
-                style={{'--stagger': index} as React.CSSProperties}
+                style={{ '--stagger': index } as React.CSSProperties}
               >
                 <div className={`w-16 h-16 bg-gradient-to-br ${feature.color} rounded-2xl flex items-center justify-center mb-6 glow-effect scale-pulse`}>
                   <feature.icon className="w-8 h-8 text-white rotate-on-hover" />
@@ -639,7 +639,7 @@ function App() {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 slide-up-stagger">
-            <div className="text-center animate-on-scroll card-tilt hover-lift" style={{'--stagger': 0} as React.CSSProperties}>
+            <div className="text-center animate-on-scroll card-tilt hover-lift" style={{ '--stagger': 0 } as React.CSSProperties}>
               <div className="w-20 h-20 bg-gradient-to-br from-[#7CA98D] to-[#6a9179] rounded-full flex items-center justify-center mx-auto mb-6 bounce-in glow-effect">
                 <span className="text-3xl font-bold text-white">1</span>
               </div>
@@ -650,7 +650,7 @@ function App() {
                 Escanea códigos de barras o añade manualmente los productos a tu despensa digital
               </p>
             </div>
-            <div className="text-center animate-on-scroll card-tilt hover-lift" style={{'--stagger': 1} as React.CSSProperties}>
+            <div className="text-center animate-on-scroll card-tilt hover-lift" style={{ '--stagger': 1 } as React.CSSProperties}>
               <div className="w-20 h-20 bg-gradient-to-br from-[#7CA98D] to-[#6a9179] rounded-full flex items-center justify-center mx-auto mb-6 bounce-in glow-effect">
                 <span className="text-3xl font-bold text-white">2</span>
               </div>
@@ -661,7 +661,7 @@ function App() {
                 Te avisamos antes de que caduquen tus productos para evitar desperdicios
               </p>
             </div>
-            <div className="text-center animate-on-scroll card-tilt hover-lift" style={{'--stagger': 2} as React.CSSProperties}>
+            <div className="text-center animate-on-scroll card-tilt hover-lift" style={{ '--stagger': 2 } as React.CSSProperties}>
               <div className="w-20 h-20 bg-gradient-to-br from-[#7CA98D] to-[#6a9179] rounded-full flex items-center justify-center mx-auto mb-6 bounce-in glow-effect">
                 <span className="text-3xl font-bold text-white">3</span>
               </div>
@@ -686,12 +686,12 @@ function App() {
                 Gestión colaborativa con tu familia
               </h2>
               <p className="text-xl text-[#3E4C59]/70 mb-8 leading-relaxed">
-                Invita a familiares y amigos para gestionar despensas compartidas. 
+                Invita a familiares y amigos para gestionar despensas compartidas.
                 Coordinen compras, compartan recetas y mantengan juntos el hogar organizado.
               </p>
               <div className="space-y-4 slide-up-stagger">
                 {benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-center space-x-3 animate-on-scroll hover-lift" style={{'--stagger': index} as React.CSSProperties}>
+                  <div key={index} className="flex items-center space-x-3 animate-on-scroll hover-lift" style={{ '--stagger': index } as React.CSSProperties}>
                     <CheckCircle className="w-6 h-6 text-[#7CA98D] flex-shrink-0 rotate-on-hover scale-pulse" />
                     <span className="text-[#3E4C59]">{benefit}</span>
                   </div>
@@ -702,7 +702,7 @@ function App() {
               <div className="bg-white rounded-2xl shadow-2xl p-6 hover-lift card-tilt gradient-border">
                 <h3 className="text-lg font-semibold text-[#3E4C59] mb-4">Despensa Familiar</h3>
                 <div className="space-y-3 slide-up-stagger">
-                  <div className="flex items-center justify-between p-3 bg-gradient-to-r from-[#F2F7FA] to-white rounded-lg hover-lift card-tilt ripple-effect" style={{'--stagger': 0} as React.CSSProperties}>
+                  <div className="flex items-center justify-between p-3 bg-gradient-to-r from-[#F2F7FA] to-white rounded-lg hover-lift card-tilt ripple-effect" style={{ '--stagger': 0 } as React.CSSProperties}>
                     <div className="flex items-center space-x-3">
                       <div className="w-10 h-10 bg-gradient-to-br from-[#7CA98D] to-[#6a9179] rounded-full flex items-center justify-center text-white text-sm font-semibold glow-effect">
                         M
@@ -714,7 +714,7 @@ function App() {
                     </div>
                     <Heart className="w-5 h-5 text-[#7CA98D] rotate-on-hover scale-pulse" />
                   </div>
-                  <div className="flex items-center justify-between p-3 bg-gradient-to-r from-[#F2F7FA] to-white rounded-lg hover-lift card-tilt ripple-effect" style={{'--stagger': 1} as React.CSSProperties}>
+                  <div className="flex items-center justify-between p-3 bg-gradient-to-r from-[#F2F7FA] to-white rounded-lg hover-lift card-tilt ripple-effect" style={{ '--stagger': 1 } as React.CSSProperties}>
                     <div className="flex items-center space-x-3">
                       <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white text-sm font-semibold glow-effect">
                         J
@@ -726,7 +726,7 @@ function App() {
                     </div>
                     <Users className="w-5 h-5 text-[#7CA98D] rotate-on-hover scale-pulse" />
                   </div>
-                  <div className="flex items-center justify-between p-3 bg-gradient-to-r from-[#F2F7FA] to-white rounded-lg hover-lift card-tilt ripple-effect" style={{'--stagger': 2} as React.CSSProperties}>
+                  <div className="flex items-center justify-between p-3 bg-gradient-to-r from-[#F2F7FA] to-white rounded-lg hover-lift card-tilt ripple-effect" style={{ '--stagger': 2 } as React.CSSProperties}>
                     <div className="flex items-center space-x-3">
                       <div className="w-10 h-10 bg-gradient-to-br from-pink-500 to-pink-600 rounded-full flex items-center justify-center text-white text-sm font-semibold glow-effect">
                         S
@@ -759,7 +759,7 @@ function App() {
             Únete a miles de familias que ya disfrutan de una gestión inteligente de su hogar
           </p>
           <div className="flex justify-center">
-            <button 
+            <button
               onClick={handleDownload}
               className="bg-white text-[#7CA98D] px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all transform hover:scale-110 flex items-center justify-center bounce-in ripple-effect glow-effect shadow-2xl"
             >
@@ -788,37 +788,24 @@ function App() {
               <p className="text-white/70 mb-4 max-w-md">
                 La aplicación que transforma la gestión de tu despensa con inteligencia artificial y colaboración familiar.
               </p>
-              <div className="flex space-x-4 slide-up-stagger">
-                <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-all cursor-pointer hover:scale-110 magnetic-hover card-tilt" style={{'--stagger': 0} as React.CSSProperties}>
-                  <span className="text-white text-sm">f</span>
-                </div>
-                <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-all cursor-pointer hover:scale-110 magnetic-hover card-tilt" style={{'--stagger': 1} as React.CSSProperties}>
-                  <span className="text-white text-sm">t</span>
-                </div>
-                <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-all cursor-pointer hover:scale-110 magnetic-hover card-tilt" style={{'--stagger': 2} as React.CSSProperties}>
-                  <span className="text-white text-sm">in</span>
-                </div>
-              </div>
             </div>
             <div className="animate-on-scroll delay-100">
               <h4 className="text-white font-semibold mb-4">Producto</h4>
               <ul className="space-y-2 text-white/70 slide-up-stagger">
-                <li style={{'--stagger': 0} as React.CSSProperties}><a href="#" className="hover:text-white transition-colors hover:scale-105 magnetic-hover">Características</a></li>
-                <li style={{'--stagger': 1} as React.CSSProperties}><a href="#" className="hover:text-white transition-colors hover:scale-105 magnetic-hover">Precios</a></li>
-                <li style={{'--stagger': 2} as React.CSSProperties}><a href="#" className="hover:text-white transition-colors hover:scale-105 magnetic-hover">Actualizaciones</a></li>
-              </ul>
-            </div>
-            <div className="animate-on-scroll delay-200">
-              <h4 className="text-white font-semibold mb-4">Soporte</h4>
-              <ul className="space-y-2 text-white/70 slide-up-stagger">
-                <li style={{'--stagger': 0} as React.CSSProperties}><a href="#" className="hover:text-white transition-colors hover:scale-105 magnetic-hover">Centro de ayuda</a></li>
-                <li style={{'--stagger': 1} as React.CSSProperties}><a href="#" className="hover:text-white transition-colors hover:scale-105 magnetic-hover">Contacto</a></li>
-                <li style={{'--stagger': 2} as React.CSSProperties}><a href="#" className="hover:text-white transition-colors hover:scale-105 magnetic-hover">Privacidad</a></li>
+                <li style={{ '--stagger': 0 } as React.CSSProperties}>
+                  <a href="#" className="hover:text-white transition-colors hover:scale-105 magnetic-hover">Características</a>
+                </li>
+                <li style={{ '--stagger': 1 } as React.CSSProperties}>
+                  <a href="#" className="hover:text-white transition-colors hover:scale-105 magnetic-hover">Precios</a>
+                </li>
+                <li style={{ '--stagger': 2 } as React.CSSProperties}>
+                  <a href="#" className="hover:text-white transition-colors hover:scale-105 magnetic-hover">Actualizaciones</a>
+                </li>
               </ul>
             </div>
           </div>
           <div className="border-t border-white/10 mt-8 pt-8 text-center text-white/70 animate-on-scroll delay-300">
-            <p>&copy; 2024 DespensaGO. Todos los derechos reservados.</p>
+            <p>&copy; 2025 DespensaGO. Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>
