@@ -104,7 +104,7 @@ function App() {
   ];
 
   const handleDownload = () => {
-    window.open('https://play.google.com/store', '_blank');
+    window.open('https://www.dropbox.com/scl/fi/sikxfx7cefo39hwv8etlb/DespensaGO-app.apk?rlkey=xka5yg2wof52iojh0vmaa3h31&e=6&st=zc266lm7&dl=1', '_blank');
   };
 
   return (
